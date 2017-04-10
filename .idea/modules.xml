@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BrainfuckSubstitutor.iml" filepath="$PROJECT_DIR$/.idea/modules/BrainfuckSubstitutor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BrainfuckSubstitutor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/BrainfuckSubstitutor_main.iml" group="BrainfuckSubstitutor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BrainfuckSubstitutor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/BrainfuckSubstitutor_test.iml" group="BrainfuckSubstitutor" />
+    </modules>
+  </component>
+</project>
