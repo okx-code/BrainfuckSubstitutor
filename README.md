@@ -22,7 +22,7 @@ You can also assign variables using existing variables, like so:
     a=+++++
     b=aaaa
     bb.
-This will set `a` to `+++++`, `b` to `aa`, or equivalently `++++++++++++++++++++`.
+This will set `a` to `+++++`, `b` to `aaaa`, or equivalently `++++++++++++++++++++`.
 
 This will output the character `(`, with character code 40.
 
