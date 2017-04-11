@@ -8,7 +8,7 @@ public class Brainfuck {
     private byte[] mem = new byte[LENGTH];
     private int dataPointer;
 
-    public void interpret(String code) {
+    public void interpret(String code, boolean hexadecimalOutput, boolean upperHex) {
         int l = 0;
         for(int i = 0; i < code.length(); i++) {
             if(code.charAt(i) == '>') {
@@ -20,9 +20,18 @@ public class Brainfuck {
             } else if(code.charAt(i) == '-') {
                 mem[dataPointer]--;
             } else if(code.charAt(i) == '.') {
-                System.out.print((char) mem[dataPointer]);
+                if(hexadecimalOutput) {
+                    String hex = Integer.toHexString(mem[dataPointer]);
+
+                    hex = upperHex ? hex.toUpperCase() : hex;
+
+                    String formatted = String.format("%2s", hex).replace(' ', '0');
+                    System.out.print(formatted + " ");
+                } else {
+                    System.out.print((char) mem[dataPointer]);
+                }
             } else if(code.charAt(i) == ',') {
-                mem[dataPointer] = (byte) sc.next().charAt(0);
+                mem[dataPointer] = sc.nextByte();
             } else if(code.charAt(i) == '[') {
                 if(mem[dataPointer] == 0) {
                     i++;
