@@ -55,7 +55,7 @@ In succinct mode, you would rewrite it as this:
     a+++++baaaa
     bb.
 
-Note that in this mode you may use `=` as a variable name unike in verbose mode,
+Note that in this mode you may use `=` as a variable name unlike in verbose mode,
 but in this mode you cannot use any of `+-<>[],.` as variable names.
 
 Also note that programs in succinct mode are required to have at least two lines of code.
