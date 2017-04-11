@@ -13,8 +13,9 @@ public class BrainfuckSubstitutor {
         if(args.length < 1) {
             System.out.println("Usage: java -jar BrainfuckSubstitutor-1.0-SNAPSHOT.jar [args] <filename>\n" +
                     "  Arguments:\n" +
-                    "    -v : Interpret in verbose mode" +
-                    "    -h : Output in hexadecimal");
+                    "    -v : Interpret in verbose mode\n" +
+                    "    -h : Output in hexadecimal\n" +
+                    "    -H : Output in hexadecimal (upppercase)");
             return;
         }
 

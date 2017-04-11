@@ -34,7 +34,11 @@ public class Brainfuck {
                 }
             } else if(code.charAt(i) == ',') {
                 try {
-                    mem[dataPointer] = (byte) reader.read();
+                    byte read = (byte) reader.read();
+                    if(read == -1) {
+                        read = 0;
+                    }
+                    mem[dataPointer] = read;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
