@@ -5,6 +5,7 @@ deploy:
   provider: releases
   api_key:
     secure: "UnQ05mBLZERJAi+/i4ZL3b+Tw4FUlgdq6RuhGDfOC+MhP7/SiJ7+7G69Oa1W0u0+xhjQLArmL6YuAa3k525I9OLxdwsZUmD36/FepRUatiBDuplqIGhvFiC5j1VGvybs3K4J4RsbNOcuHo/O/eEmjaSmMfIPq1rLf/MhR48gMCYoOQGu5a6CEFU6vJSes34uMwUOxW8CNwg/6QLNIjEAGM+1VZYqTwvQTZJJ4cb9fHGc6lGrVCOqa4vGCjBUePLiC1nDu+UQ4OTENsWOxag4WeEaZGfcdK8IJ7eG9LrfjafzMXYjX1u7rVOhz92BDUvs4EYCiCAFhkSBIpwf1RgOJio352al4l+z3fl/Z9tjW3jXOwtJ70lkHyKHUSNQSZIOMQVmONb70khCUKJml023Xhi0PandtO3MaiVn5/FdCAoIb67divOGaE1L0+0Qnny9xG09IggywMK7LHrWRVzmDLecZjxs9vTEgUk/IcqdzsIXpRdq6NrGIzHXVIPYd+UYaHFZu9Cfk2ZIgNiWGU9WB/JQD8OkzWbvsR5QOIgsC1h4nvZ7/slxnpFpjyNjEXcgV7wzQITgGyt/jaaxvlAXm3JCobYM8FOJ/wF40Ehp6vizzdEGPJ8V56Ma+UwQ+nuBgW5Fu45i+z+RiWAZk4Ohsy36T3GfKL85wZQirvrAJis="
+  skip_cleanup: true
   file: "build/libs/BrainfuckSubstitutor-1.0-SNAPSHOT.jar"
   on:
     branch: master
