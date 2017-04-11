@@ -1,4 +1,4 @@
-# BrainfuckSubstitutor
+# BrainfuckSubstitutor [![Build Status](https://travis-ci.org/okx-code/BrainfuckSubstitutor.svg?branch=master)](https://travis-ci.org/okx-code/BrainfuckSubstitutor)
 
 BrainfuckSubstitutor (also known as *BF Substitutor* or *BFS*)
 is an extension of Brainfuck that allows you to substitute parts of the code for
