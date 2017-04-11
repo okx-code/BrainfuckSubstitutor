@@ -1,9 +1,11 @@
 package me.okx.brainfucksubstitutor;
 
-import java.util.*;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
 
 public class Brainfuck {
-    private Scanner sc = new Scanner(System.in);
+    private Reader reader = new InputStreamReader(System.in);
     private final int LENGTH = 65535;
     private byte[] mem = new byte[LENGTH];
     private int dataPointer;
@@ -31,7 +33,11 @@ public class Brainfuck {
                     System.out.print((char) mem[dataPointer]);
                 }
             } else if(code.charAt(i) == ',') {
-                mem[dataPointer] = sc.nextByte();
+                try {
+                    mem[dataPointer] = (byte) reader.read();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             } else if(code.charAt(i) == '[') {
                 if(mem[dataPointer] == 0) {
                     i++;
@@ -52,6 +58,11 @@ public class Brainfuck {
                     i--;
                 }
             }
+        }
+        try {
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

@@ -1,6 +1,10 @@
 # BrainfuckSubstitutor
 
-BrainfuckSubstitutor (or BFS for short) is an extension of Brainfuck that allows you to substitute parts of the code for characters.
+BrainfuckSubstitutor (also known as *BF Substitutor* or *BFS*)
+is an extension of Brainfuck that allows you to substitute parts of the code for
+variables.
+
+There are two ways to write a program: In succinct mode, or in verbose mode.
 
 Programs are written first by assigning code to variables, like such:
 
